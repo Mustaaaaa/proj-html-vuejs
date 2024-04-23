@@ -1,0 +1,23 @@
+.container{
+    width: 1750px;
+    max-width: 100%;
+}
+.flex{
+    display: flex;
+}
+.justify-center{
+display: flex;
+justify-content: center;
+}
+.justify-space-between{
+display: flex;
+justify-content: space-between;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.col-6{
+    width: calc(100%/12)*6;
+}
+
