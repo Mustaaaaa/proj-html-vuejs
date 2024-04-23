@@ -2,6 +2,10 @@
     width: 1750px;
     max-width: 100%;
 }
+.container-lg{
+    width: 100%;
+    max-width: 100%;
+}
 .flex{
     display: flex;
 }
@@ -18,7 +22,12 @@ justify-content: space-between;
 }
 .row{
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+}
+.column{
+    display: flex;
+    flex-direction: column;
 }
 .col-5{
     width: calc(100%/12)*5;
@@ -28,6 +37,9 @@ justify-content: space-between;
 }
 .col-3{
     width: calc(100%/12)*3;
+}
+.col-4{
+    width: calc(100%/12)*4;
 }
 .col-9{
     width: calc(100%/12)*9;

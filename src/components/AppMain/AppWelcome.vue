@@ -27,8 +27,7 @@
 </script>
 
 <style lang="scss">
-.welcome-section,
-.header-br {
+.welcome-section{
     background-image: url(/mt-2236-home-bg1.jpg);
     background-size: cover;
     background-position: center;

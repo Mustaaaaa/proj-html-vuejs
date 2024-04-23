@@ -68,7 +68,7 @@ export default {
                 {
                     "icon": "/mt-2236-home-icon1.png",
                     "title": "Various Age Groups",
-                    "description": "We provide chess classes to both children from 5 years old and adults",
+                    "description": "We provide chess classes to both children from 5 years old and adults.",
                 },
                 {
                     "icon": "/mt-2236-home-icon2.png",
@@ -203,11 +203,15 @@ export default {
         justify-content: center;
         align-items: center;
         gap: 100px;
-        padding: 100px 0;
-
+        padding: 60px 0;
+        
+        img{
+            height: 190px;
+        }
         .title {
             font-size: 40px;
             font-weight: 700;
+            padding-bottom: 20px;
         }
 
         .description {
@@ -216,7 +220,7 @@ export default {
 
         .learnMore-button {
             background: transparent;
-            border:black solid;
+            border:black solid 2px;
             border-radius: 10px;
             font-size: 25px;
             width: 270px;
