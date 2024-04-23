@@ -43,6 +43,21 @@
             </div>
         </div>
     </div>
+    <div class="gallery-section">
+        <div class="imagesGallery">
+            <div v-for="imageGallery in imagesGallery" class="col-3">
+                <img :src="imageGallery" alt="">
+            </div>
+        </div>
+        <div v-for="service in services.slice(4, 5)" class="row text-gallery">
+            <img :src="service.icon" alt="">
+            <ul>
+                <li class="title">{{ service.title }}</li>
+                <li class="description">{{ service.description }}</li>
+            </ul>
+            <button class="learnMore-button">Learn More</button>
+        </div>
+    </div>
 </template>
 
 <script>
@@ -76,7 +91,7 @@ export default {
                     "description": "Take a look into our day to day life here at Chess School",
                 },
             ],
-            "images": [
+            "imagesGallery": [
                 "/mt-2236-home-gallery1.jpg",
                 "/mt-2236-home-gallery2.jpg",
                 "/mt-2236-home-gallery3.jpg",
@@ -106,7 +121,7 @@ export default {
             padding-top: 60px;
 
             li {
-                padding-bottom: 40px;
+                padding: 0 60px 40px 0;
             }
 
             .list {
@@ -158,12 +173,55 @@ export default {
                     .description {
                         font-size: 20px;
                     }
+
                     li {
                         padding: 10px 90px 10px 100px;
 
                     }
                 }
             }
+        }
+    }
+}
+
+.gallery-section {
+
+    .imagesGallery {
+        display: flex;
+
+        .col-3 {
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    .text-gallery {
+        background-color: #FFCD18;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+        padding: 100px 0;
+
+        .title {
+            font-size: 40px;
+            font-weight: 700;
+        }
+
+        .description {
+            font-size: 25px;
+        }
+
+        .learnMore-button {
+            background: transparent;
+            border:black solid;
+            border-radius: 10px;
+            font-size: 25px;
+            width: 270px;
+            height: 75px;
+            cursor: pointer;
         }
     }
 }
