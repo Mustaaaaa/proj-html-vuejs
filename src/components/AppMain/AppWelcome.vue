@@ -4,9 +4,9 @@
             <div>
                 <p class="welcome-badge">WELCOME</p>
             </div>
-            <div class="col-6">
+            <div class="col-5">
                 <ul>
-                    <li class="title">ACADEMIC CHESS FOR EVERYONE</li>
+                    <li class="title">ACADEMIC CHESS FOR <em class="yellow">EVERYONE</em></li>
                     <li class="description">
                         We are dedicated to broadening and developing chess as art, recreation, and as a significant
                         element of culture in Northern California.
@@ -27,32 +27,33 @@
 </script>
 
 <style lang="scss">
-.welcome-section, .header-bar{
-    background-image: url(../../public/mt-2236-home-bg1.jpg);
+.welcome-section,
+.header-br {
+    background-image: url(/mt-2236-home-bg1.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
+
 .welcome-section {
-
-
-    height: 1200px;
+    padding: 330px 0;
+    color: white;
 
     .title {
         font-size: 80px;
         font-weight: 700;
-        color: white;
     }
 
     .description {
-        padding: 70px 0;
-        font-size: 30px;
-        color: white;
+        font-size: 24px;
+        padding: 40px 0 50px 0;
     }
 
     .welcome-badge {
+        margin-bottom: 15px;
         background: #FFCD18;
+        color: black;
         width: 125px;
         height: 25px;
         display: flex;

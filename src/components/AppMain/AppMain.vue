@@ -1,12 +1,14 @@
 <template>
   <div>
     <AppWelcome/>
+    <AppOurServices/>
   </div>
 </template>
 
 <script>
 import axios from 'axios';
 import AppWelcome from './AppWelcome.vue';
+import AppOurServices from './AppOurServices.vue';
 
 export default {
   data() {
@@ -15,7 +17,8 @@ export default {
   },
 
   components: {
-    AppWelcome
+    AppWelcome,
+    AppOurServices,
   }
 };
 </script>
