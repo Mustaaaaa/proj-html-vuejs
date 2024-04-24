@@ -1,7 +1,7 @@
 <template>
     <div class="justify-center">
         <div class="container flex">
-            <div class="card col-4" v-for="course in courses">
+            <div class="card-courses col-4" v-for="course in courses">
                 <img :src="course.image" alt="">
                 <ul>
                     <li class="title">{{ course.title }}</li>
@@ -44,7 +44,7 @@ export default {
 </script>
 
 <style lang="scss">
-.card {
+.card-courses {
     margin: 0 20px;
     padding-bottom: 45px;
     text-align: center;

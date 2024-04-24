@@ -3,6 +3,7 @@
     <AppWelcome/>
     <AppOurServices/>
     <AppCourses/>
+    <AppEvents/>
   </div>
 </template>
 
@@ -11,6 +12,7 @@ import axios from 'axios';
 import AppWelcome from './AppWelcome.vue';
 import AppOurServices from './AppOurServices.vue';
 import AppCourses from './AppCourses/AppCourses.vue';
+import AppEvents from './AppEvents/AppEvents.vue';
 
 
 export default {
@@ -23,6 +25,7 @@ export default {
     AppWelcome,
     AppOurServices,
     AppCourses,
+    AppEvents,
   }
 };
 </script>

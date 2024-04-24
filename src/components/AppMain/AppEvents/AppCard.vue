@@ -1,0 +1,92 @@
+<template>
+    <div class="justify-center">
+        <div class="container">
+            <div class="card-events" v-for="event in events">
+                <div class="row">
+                    <div class="col-4">
+                        <img :src="event.image" alt="">
+                    </div>
+                    <div class="col-5  card-description-section">
+                        <p class="title">{{ event.title }}</p>
+                        <p class="description">{{ event.description }}</p>
+                    </div>
+                    <div class="col-3 card-button-section">
+                        <button>Register</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<script>
+export default {
+    data() {
+        return {
+            "events": [
+                {
+                    "image": "/mt-2236-home-img4.jpg",
+                    "title": "Grand Summer Tournament of 2021",
+                    "description": "Join us for the Grand Summer Tournament 2021. Held every year on the first Sunday of summer, our Grand Summer Tournament| chess masters and beginners from North California. We have competitions for different levels of chess mastery with amazing prizes awarded at each level.",
+                },
+                {
+                    "image": "/mt-2236-home-img5.jpg",
+                    "title": "World Chess Day",
+                    "description": "Celebrated on July 20 every year, World Chess Day Is one of the biggest events at our school. Be ready for fun tournaments and big prizes. Registration is obligatory!",
+                },
+            ],
+            "news": [
+                {
+                    "image": "/mt-2236-blog-img1.jpg",
+                    "description": "The most common mistakes when managing personal finances",
+                },
+                {
+                    "image": "/mt-2236-blog-img2.jpg",
+                    "description": "Methods of the recruitment",
+                },
+            ],
+        }
+    }
+}
+</script>
+
+<style lang="scss">
+.card-events {
+
+    .card-description-section{
+        padding: 0 25px 0 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+        .title {
+            font-size: 27px;
+            font-weight: 700;
+        }
+        
+        .description {
+            padding-top: 45px;
+            font-size: 17px;
+        }
+    }
+
+    img {
+        width: 100%;
+    }
+    .card-button-section{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        button {
+            background-color: #FFCD18;
+            border: none;
+            border-radius: 10px;
+            font-size: 25px;
+            width: 270px;
+            height: 75px;
+            cursor: pointer;
+        }
+    }
+}
+</style>
