@@ -11,7 +11,7 @@
                         <p class="description">{{ event.description }}</p>
                     </div>
                     <div class="col-3 card-button-section">
-                        <button>Register</button>
+                        <button class="register-button">Register</button>
                     </div>
                 </div>
             </div>
@@ -75,7 +75,7 @@ export default {
         align-items: center;
         justify-content: center;
 
-        button {
+        .register-button {
             background-color: #FFCD18;
             border: none;
             border-radius: 10px;
@@ -83,6 +83,12 @@ export default {
             width: 270px;
             height: 75px;
             cursor: pointer;
+        }
+        .register-button:hover {
+            background-color: #e0b51a;
+        }
+        .register-button:active {
+            background-color: #FFCD18;
         }
     }
 }

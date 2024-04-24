@@ -76,11 +76,11 @@ export default {
 }
 
 .latest-news-section {
-    background-color: #E8E8E8;
+    background: #E8E8E8;
     padding: 160px 0 180px 0;
 
     .view-other-posts-button {
-        background-color: white;
+        background: #E8E8E8;
         border: solid 2px;
         border-radius: 10px;
         font-size: 25px;
@@ -88,6 +88,12 @@ export default {
         height: 75px;
         cursor: pointer;
         margin: 60px 0 80px 0;
+    }
+    .view-other-posts-button:hover {
+        background: rgba(0, 0, 0, 0.040);
+    }
+    .view-other-posts-button:active {
+        background: #E8E8E8;
     }
 
     .title {

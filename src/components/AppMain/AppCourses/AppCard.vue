@@ -7,7 +7,7 @@
                     <li class="title">{{ course.title }}</li>
                     <li class="description">{{ course.description }}</li>
                     <li class="price">{{ course.price }}</li>
-                    <li><button>View More</button></li>
+                    <li><button class="view-more-button">View More</button></li>
                 </ul>
             </div>
         </div>
@@ -77,7 +77,7 @@ export default {
         width: 100%;
     }
 
-    button {
+    .view-more-button {
         background-color: #FFCD18;
         border: none;
         border-radius: 10px;
@@ -85,6 +85,12 @@ export default {
         width: 270px;
         height: 75px;
         cursor: pointer;
+    }
+    .view-more-button:hover {
+        background-color: #e0b51a;
+    }
+    .view-more-button:active {
+        background-color: #FFCD18;
     }
 }
 </style>

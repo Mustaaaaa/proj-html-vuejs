@@ -153,6 +153,14 @@ export default {
                 height: 75px;
                 cursor: pointer;
             }
+
+            .learnMore-button:hover {
+                background: #e0b51a;
+            }
+
+            .learnMore-button:active {
+                background: #FFCD18;
+            }
         }
 
         .col-9 {
@@ -204,10 +212,11 @@ export default {
         align-items: center;
         gap: 100px;
         padding: 60px 0;
-        
-        img{
+
+        img {
             height: 190px;
         }
+
         .title {
             font-size: 40px;
             font-weight: 700;
@@ -220,12 +229,20 @@ export default {
 
         .learnMore-button {
             background: transparent;
-            border:black solid 2px;
+            border: black solid 2px;
             border-radius: 10px;
             font-size: 25px;
             width: 270px;
             height: 75px;
             cursor: pointer;
+        }
+
+        .learnMore-button:hover {
+            background: #e0b51a;
+        }
+
+        .learnMore-button:active {
+            background: transparent;
         }
     }
 }

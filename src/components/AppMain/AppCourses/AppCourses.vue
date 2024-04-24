@@ -69,7 +69,15 @@ export default {
         cursor: pointer;
         margin: 60px 0 80px 0;
     }
-    
+
+    .other-courses-button:hover {
+        background: rgba(0, 0, 0, 0.040);
+    }
+
+    .other-courses-button:active {
+        background-color: white;
+    }
+
 }
 
 .first-step-div {
@@ -79,20 +87,22 @@ export default {
     background-position: center;
     background-repeat: no-repeat;
     color: white;
-    
+
     .title {
         font-size: 50px;
         font-weight: 700;
         padding: 160px 0 47px 0;
     }
-    
+
     .description {
         font-size: 20x;
         padding-bottom: 175px;
     }
-    .col-3{
+
+    .col-3 {
         display: flex;
         align-items: center;
+
         .button-view-more {
             background-color: #FFCD18;
             border: none;
@@ -101,6 +111,12 @@ export default {
             width: 270px;
             height: 75px;
             cursor: pointer;
+        }
+        .button-view-more:hover {
+            background-color: #e0b51a;
+        }
+        .button-view-more:active {
+            background-color: #FFCD18;
         }
     }
 }
