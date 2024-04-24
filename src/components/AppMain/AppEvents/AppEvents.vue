@@ -1,5 +1,5 @@
 <template>
-    <div class="events-section justify-center">
+    <div class="events-section justify-center scrollAnimation">
         <div class="container ">
             <ul class="text-center">
                 <li>
@@ -14,7 +14,7 @@
             </ul>
         </div>
     </div>
-    <div class="latest-news-section justify-center">
+    <div class="latest-news-section justify-center scrollAnimation">
         <div class="container flex">
             <div class="col-3 justify-center column">
                 <p class="title">Latest News</p>
@@ -35,6 +35,8 @@
 
 <script>
 import AppCard from './AppCard.vue';
+import { scrollAnimation } from '../ScrollAnimation/ScrollAnimation.vue';
+scrollAnimation()
 
 export default {
     data() {

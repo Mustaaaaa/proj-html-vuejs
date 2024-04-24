@@ -1,5 +1,5 @@
 <template>
-    <div class="courses-section justify-center ">
+    <div class="courses-section justify-center scrollAnimation">
         <div class="container">
             <ul class="text-center">
                 <li>
@@ -15,7 +15,7 @@
             </ul>
         </div>
     </div>
-    <div class="first-step-div justify-center">
+    <div class="first-step-div justify-center scrollAnimation">
         <div class="container flex">
             <div class="col-9">
                 <p class="title">TAKE THE <span class="yellow">FIRST STEP</span></p>
@@ -30,7 +30,8 @@
 
 <script>
 import AppCard from './AppCard.vue';
-
+import { scrollAnimation } from '../ScrollAnimation/ScrollAnimation.vue';
+scrollAnimation()
 export default {
     data() {
         return {

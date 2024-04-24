@@ -27,7 +27,7 @@
 
 <script>
 window.addEventListener('load', function () {
-    var content = document.querySelector('.content');
+    const content = document.querySelector('.content');
     content.classList.add('show');
 });
 
@@ -104,14 +104,15 @@ window.addEventListener('load', function () {
 
     .content {
         opacity: 0;
-        transform: translateY(50px);
-        transition: opacity 0.5s, transform 0.5s;
+        transform: translateY(330px);
+        transition: opacity 1.5s, transform 1.0s;
     }
-    
+
     .content.show {
         opacity: 1;
         transform: translateY(0);
     }
+
     .phone-button-on-main {
         border-radius: 999px;
         border: none;
@@ -124,13 +125,15 @@ window.addEventListener('load', function () {
         position: fixed;
         left: 15px;
         top: 600px;
+        z-index: 9;
     }
+
     .phone-button-on-main:hover {
         background-color: rgb(245, 245, 245);
     }
+
     .phone-button-on-main:active {
         background-color: white;
     }
 }
-
 </style>

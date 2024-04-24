@@ -59,10 +59,22 @@
             .home-page-list {
                 color: #FFCD18;
             }
+            .home-page-list:hover {
+                color: #ffcd18c7;
+            }
+            .home-page-list:active {
+                color: #FFCD18;
+            }
 
             a {
                 color: white;
                 text-decoration: none;
+            }
+            a:hover {
+                color: rgba(255, 255, 255, 0.904);
+            }
+            a:active {
+                color: white;
             }
         }
 

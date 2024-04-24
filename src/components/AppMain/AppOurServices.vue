@@ -1,5 +1,5 @@
 <template>
-    <div class="ourServices-section justify-center">
+    <div class="ourServices-section justify-center scrollAnimation">
         <div class="container">
             <div>
                 <ul class="text-center">
@@ -43,7 +43,7 @@
             </div>
         </div>
     </div>
-    <div class="gallery-section">
+    <div class="gallery-section  scrollAnimation">
         <div class="imagesGallery">
             <div v-for="imageGallery in imagesGallery" class="col-3">
                 <img :src="imageGallery" alt="">
@@ -61,6 +61,8 @@
 </template>
 
 <script>
+import { scrollAnimation } from './ScrollAnimation/ScrollAnimation.vue';
+scrollAnimation()
 export default {
     data() {
         return {
