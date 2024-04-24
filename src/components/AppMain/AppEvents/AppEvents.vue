@@ -12,21 +12,21 @@
                     <AppCard />
                 </li>
             </ul>
-            <div class="latest-news-section justify-center">
-                <div class="container flex">
-                    <div class="col-3">
-                        <p class="title">Latest News</p>
-                        <br>
-                        <button class="button-view-other-posts">View Other Posts</button>
-                    </div>
-                    <div class="col-9 flex">
-                        <div class="flex col-6" v-for="latestNew in latestNews">
-                            <ul>
-                                <li><img :src="latestNew.image" alt=""></li>
-                                <li class="description">{{ latestNew.description }}</li>
-                            </ul>
-                        </div>
-                    </div>
+        </div>
+    </div>
+    <div class="latest-news-section justify-center">
+        <div class="container flex">
+            <div class="col-3 justify-center column">
+                <p class="title">Latest News</p>
+                <div class="yellow-line"></div>
+                <button class="view-other-posts-button">View Other Posts</button>
+            </div>
+            <div class="col-9 flex news-image-section">
+                <div class="flex col-6" v-for="latestNew in latestNews">
+                    <ul>
+                        <li><img :src="latestNew.image" alt=""></li>
+                        <li class="description">{{ latestNew.description }}</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -76,15 +76,46 @@ export default {
 }
 
 .latest-news-section {
-    padding: 160px 0 0 0;
+    background-color: #E8E8E8;
+    padding: 160px 0 180px 0;
 
+    .view-other-posts-button {
+        background-color: white;
+        border: solid 2px;
+        border-radius: 10px;
+        font-size: 25px;
+        width: 370px;
+        height: 75px;
+        cursor: pointer;
+        margin: 60px 0 80px 0;
+    }
 
     .title {
         font-size: 45px;
         font-weight: 700;
     }
 
+    .news-image-section {
 
+        img {
+            padding: 0 0 0 45px;
+        }
+
+        .description {
+            padding: 30px 0 0 45px;
+            font-size: 20px;
+        }
+    }
+
+    .yellow-line {
+        background-color: #FFCC00;
+        width: 100px;
+        height: 5px;
+        margin-top: 70px;
+
+
+
+    }
 
 }
 </style>

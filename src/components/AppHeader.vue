@@ -70,6 +70,12 @@
             height: 60px;
             cursor: pointer;
         }
+        .donate-header-button:hover {
+            background-color: rgba(255, 255, 255, 0.904);
+        }
+        .donate-header-button:active {
+            background-color: rgb(255, 255, 255);
+        }
         .logo-and-page-list-sec{
             padding-top: 15px;
         }

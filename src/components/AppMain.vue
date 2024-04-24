@@ -9,10 +9,10 @@
 
 <script>
 import axios from 'axios';
-import AppWelcome from './AppWelcome.vue';
-import AppOurServices from './AppOurServices.vue';
-import AppCourses from './AppCourses/AppCourses.vue';
-import AppEvents from './AppEvents/AppEvents.vue';
+import AppWelcome from './AppMain/AppWelcome.vue';
+import AppOurServices from './AppMain/AppOurServices.vue';
+import AppCourses from './AppMain/AppCourses/AppCourses.vue';
+import AppEvents from './AppMain/AppEvents/AppEvents.vue';
 
 
 export default {
@@ -30,4 +30,6 @@ export default {
 };
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+@use '../style/general.scss';
+</style>

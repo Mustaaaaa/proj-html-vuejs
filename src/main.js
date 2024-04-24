@@ -9,12 +9,14 @@ import {
     faPhone,
     faLocationDot,
     faChessPawn,
+   faPaperPlane,
 } from '@fortawesome/free-solid-svg-icons'
 import {
+    faFacebookF,
+    faInstagram,
+} from '@fortawesome/free-brands-svg-icons'
 
-} from '@fortawesome/free-regular-svg-icons'
-
-library.add(faLocationDot, faPhone, faChessPawn)
+library.add(faLocationDot, faPhone, faChessPawn, faFacebookF, faPaperPlane, faInstagram)
 
 const app = createApp(App)
 app.component('font-awesome-icon', FontAwesomeIcon)
